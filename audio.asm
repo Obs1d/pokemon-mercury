@@ -136,7 +136,8 @@ INCLUDE "audio/music/crystalopening.asm"
 INCLUDE "audio/music/battletowertheme.asm"
 INCLUDE "audio/music/suicunebattle.asm"
 INCLUDE "audio/music/battletowerlobby.asm"
-INCLUDE "audio/music/mobilecenter.asm"
+;INCLUDE "audio/music/mobilecenter.asm"
+INCLUDE "audio/music/RSE/frontierbrain.asm"
 
 
 

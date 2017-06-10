@@ -1469,7 +1469,7 @@ PlayBattleMusic: ; 2ee6c
 	callba IsKantoGymLeader
 	jr c, .done
 
-	ld de, MUSIC_JOHTO_GYM_LEADER_BATTLE
+	ld de, MUSIC_MOBILE_CENTER 
 	callba IsJohtoGymLeader
 	jr c, .done
 
