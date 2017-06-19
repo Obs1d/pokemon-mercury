@@ -135,6 +135,37 @@ UpdateBattleHuds:: ; 39d4
 	ret
 ; 39e1
 
+;New stuff added to check types
+CheckIfUserIsGroundType::
+	ld a, GROUND
+	jr CheckIfUserIsSomeType
+CheckIfUserIsRockType::
+	ld a, ROCK
+	jr CheckIfUserIsSomeType
+CheckIfUserIsSteelType::
+	ld a, STEEL
+	jr CheckIfUserIsSomeType
+CheckIfUserIsIceType::
+	ld a, ICE
+CheckIfUserIsSomeType::
+	ld b, a
+	ld a, [hBattleTurn]
+	xor 1
+CheckIfSomeoneIsSomeType
+	ld c, a
+	ld de, EnemyMonType1
+	ld a, c
+	and a
+	jr z, .ok
+	ld de, BattleMonType1
+.ok
+	ld a, [de]
+	inc de
+	cp b
+	ret z
+	ld a, [de]
+	cp b
+	ret
 
 GetBattleVar:: ; 39e1
 ; Preserves hl.

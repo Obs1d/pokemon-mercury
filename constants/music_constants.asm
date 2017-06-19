@@ -102,6 +102,6 @@
 	const MUSIC_BATTLE_TOWER_THEME           ; 63
 	const MUSIC_SUICUNE_BATTLE               ; 64
 	const MUSIC_BATTLE_TOWER_LOBBY           ; 65
-	const MUSIC_MOBILE_CENTER                ; 66
+	const MUSIC_MOBILE_CENTER                ; 66 Battle Frontier Brain
 
 MUSIC_MAHOGANY_MART EQU $64 ; leftover from gold

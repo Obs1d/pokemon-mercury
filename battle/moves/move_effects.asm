@@ -1690,6 +1690,13 @@ Sandstorm:
 	doturn
 	startsandstorm
 	endmove
+	
+Hail:
+	checkobedience
+	usedmovetext
+	doturn
+	starthail
+	endmove
 
 Endure:
 	checkobedience

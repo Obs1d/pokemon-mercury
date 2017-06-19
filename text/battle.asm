@@ -96,6 +96,12 @@ SandstormHitsText: ; 0x8084d
 	prompt
 ; 0x80864
 
+HailHitsText: 
+	text "<USER> is"
+	line "buffeted by"
+	cont "the hail!"
+	prompt
+
 PerishCountText: ; 0x80864
 	text "<USER>'s"
 	line "PERISH count is @"
@@ -167,6 +173,11 @@ BattleText_TheSandstormRages: ; 0x80951
 	prompt
 ; 0x80967
 
+BattleText_TheHailContinuesToFall: ; 0x80951
+	text "The HAIL continues"
+	line "to fall."
+	prompt
+
 BattleText_TheRainStopped: ; 0x80967
 	text "The rain stopped."
 	prompt
@@ -183,6 +194,10 @@ BattleText_TheSandstormSubsided: ; 0x8098f
 	line "subsided."
 	prompt
 ; 0x809a8
+
+BattleText_TheHailStopped: ; 0x8098f
+	text "The HAIL stopped."
+	prompt
 
 BattleText_EnemyPkmnFainted: ; 0x809a8
 	text "Enemy @"
@@ -1171,6 +1186,11 @@ SandstormBrewedText: ; 0x816e4
 	line "brewed!"
 	prompt
 ; 0x816f9
+
+HailStartedText: ; 0x816e4
+	text "It started to"
+	line "HAIL!"
+	prompt
 
 BracedItselfText: ; 0x816f9
 	text "<USER>"

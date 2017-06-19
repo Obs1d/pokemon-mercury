@@ -426,8 +426,8 @@ Route29_MapEventHeader:: db 0, 0
 	warp_def 0, 59, 3, ROUTE_29_46_GATE
 
 .CoordEvents: db 2
-	xy_trigger 1, 8, 53, 0, Route29Tutorial1, 0, 0
-	xy_trigger 1, 9, 53, 0, Route29Tutorial2, 0, 0
+	xy_trigger 1, 2, 59, 0, Route29Tutorial1, 0, 0
+	xy_trigger 1, 1, 59, 0, Route29Tutorial2, 0, 0
 
 .BGEvents: db 2
 	signpost 11, 25, SIGNPOST_READ, Route29Sign1
@@ -441,5 +441,5 @@ Route29_MapEventHeader:: db 0, 0
 	person_event SPRITE_FISHER, 7, 49, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, Route29FisherScript, -1
 	person_event SPRITE_COOLTRAINER_M, 5, 29, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_SCRIPT, 0, CooltrainerMScript_0x1a1031, -1
 	person_event SPRITE_TEACHER, 2, 32, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, TuscanyScript, EVENT_ROUTE_29_TUSCANY_OF_TUESDAY
-	person_event SPRITE_POKE_BALL, 2, 26, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route29Potion, EVENT_ROUTE_29_POTION
+	person_event SPRITE_POKE_BALL, 11, 32, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route29Potion, EVENT_ROUTE_29_POTION
 

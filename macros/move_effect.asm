@@ -181,6 +181,7 @@ endm
 	command startloop               ; ae
 	command curl                    ; af
 	command burn					; b0
+	command starthail
 
 	enum_start -1, -1
 	command endmove

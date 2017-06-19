@@ -1188,32 +1188,32 @@
 	db 23, GOLBAT
 	db 23, GOLBAT
 
-	map ROUTE_29
+	map ROUTE_29				;Route 1
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
 	db 2, SENTRET
-	db 3, PIDGEY
-	db 3, SENTRET
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
-	; day
-	db 2, PIDGEY
-	db 2, SENTRET
-	db 3, PIDGEY
-	db 3, SENTRET
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
-	; nite
-	db 2, HOOTHOOT
-	db 2, RATTATA
-	db 3, HOOTHOOT
+	db 2, HOPPIP
 	db 3, RATTATA
-	db 2, RATTATA
-	db 3, HOOTHOOT
-	db 3, HOOTHOOT
+	db 2, IGGLYBUFF
+	db 3, LEDYBA
+	db 3, LEDYBA
+	db 3, LEDYBA
+	; day
+	db 2, SENTRET
+	db 2, HOPPIP
+	db 3, RATTATA
+	db 2, IGGLYBUFF
+	db 3, LEDYBA
+	db 3, SPINARAK
+	db 3, SPINARAK
+	; nite
+	db 2, SENTRET
+	db 2, HOPPIP
+	db 3, RATTATA
+	db 2, IGGLYBUFF
+	db 3, SPINARAK
+	db 3, SPINARAK
+	db 3, SPINARAK
 
 	map ROUTE_30
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

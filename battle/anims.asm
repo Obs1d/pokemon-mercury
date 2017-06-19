@@ -268,6 +268,7 @@ BattleAnimations:: ; c906f
 	dw BattleAnim_Par
 	dw BattleAnim_InLove
 	dw BattleAnim_InSandstorm
+	dw BattleAnim_InHail
 	dw BattleAnim_InNightmare
 	dw BattleAnim_InWhirlpool
 	dw BattleAnim_Miss
@@ -596,6 +597,25 @@ BattleAnim_InSandstorm: ; c9533
 	anim_sound 0, 1, SFX_MENU
 	anim_wait 8
 	anim_loop 6, .loop
+	anim_wait 8
+	anim_ret
+; c9550
+
+BattleAnim_InHail: ; c9533
+	anim_1gfx ANIM_GFX_POWDER
+	anim_bgeffect ANIM_BG_06, $0, $2, $0
+	anim_bgeffect ANIM_BG_WHITE_HUES, $0, $8, $0
+	anim_obj ANIM_OBJ_HAIL, 11, 0,  0, 0, $0
+	anim_wait 8
+	anim_obj ANIM_OBJ_HAIL,  9, 0,  0, 0, $1
+	anim_wait 8
+	anim_obj ANIM_OBJ_HAIL,  7, 0,  0, 0, $2
+.loop
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 4
+	anim_sound 0, 0, SFX_SHINE
+	anim_wait 4
+	anim_loop 16, .loop
 	anim_wait 8
 	anim_ret
 ; c9550
@@ -1872,19 +1892,21 @@ BattleAnim_Bide: ; c9ffc
 ; ca014
 
 BattleAnim_Bind: ; ca014
-	anim_1gfx ANIM_GFX_ROPE
-	anim_sound 0, 1, SFX_BIND
-	anim_obj ANIM_OBJ_48, -16, 4,   8, 0, $0
+	anim_1gfx ANIM_GFX_POWDER
+	anim_bgeffect ANIM_BG_06, $0, $2, $0
+	anim_bgeffect ANIM_BG_WHITE_HUES, $0, $8, $0
+	anim_obj ANIM_OBJ_HAIL, 11, 0,  0, 0, $0
 	anim_wait 8
-	anim_obj ANIM_OBJ_49, -16, 4,   7, 0, $0
+	anim_obj ANIM_OBJ_HAIL,  9, 0,  0, 0, $1
 	anim_wait 8
-	anim_obj ANIM_OBJ_48, -16, 4,   6, 0, $0
-	anim_wait 64
-	anim_sound 0, 1, SFX_BIND
-	anim_incobj  1
-	anim_incobj  2
-	anim_incobj  3
-	anim_wait 96
+	anim_obj ANIM_OBJ_HAIL,  7, 0,  0, 0, $2
+.loop
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 4
+	anim_sound 0, 0, SFX_SHINE
+	anim_wait 4
+	anim_loop 16, .loop
+	anim_wait 8
 	anim_ret
 ; ca036
 
