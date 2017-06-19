@@ -615,7 +615,7 @@ BattleAnim_InHail: ; c9533
 	anim_wait 4
 	anim_sound 0, 0, SFX_SHINE
 	anim_wait 4
-	anim_loop 16, .loop
+	anim_loop 6, .loop
 	anim_wait 8
 	anim_ret
 ; c9550

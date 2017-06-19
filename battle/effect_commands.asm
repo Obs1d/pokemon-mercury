@@ -1713,7 +1713,7 @@ BattleCommand_CheckHit: ; 34d32
 	call .FlyDigMoves
 	jp nz, .Miss
 
-	call .ThunderRain
+	call .WeatherAccCheck
 	ret z
 
 	call .XAccuracy
@@ -2842,6 +2842,8 @@ PlayerAttackDamage: ; 352e2
 	ld a, [hli]
 	ld b, a
 	ld c, [hl]
+	
+	call HailDefenseBoost
 
 	ld a, [EnemyScreens]
 	bit SCREENS_REFLECT, a
@@ -2866,6 +2868,8 @@ PlayerAttackDamage: ; 352e2
 	ld a, [hli]
 	ld b, a
 	ld c, [hl]
+	
+	call SandstormSpDefBoost
 
 	ld a, [EnemyScreens]
 	bit SCREENS_LIGHT_SCREEN, a
@@ -3088,6 +3092,39 @@ SpeciesItemBoost: ; 353d1
 
 ; 353f6
 
+SandstormSpDefBoost:
+	ld a, [Weather]
+	cp WEATHER_SANDSTORM
+	ret nz
+	call CheckIfTargetIsRockType
+	ret z
+	push hl
+	ld h, b
+	ld l, c
+	add hl, hl
+	add hl, bc
+	ld b, h
+	ld c, l
+	pop hl
+	ret
+
+
+HailDefenseBoost:
+	ld a, [Weather]
+	cp WEATHER_HAIL
+	ret nz
+	call CheckIfTargetIsIceType
+	ret z
+	push hl
+	ld h, b
+	ld l, c
+	add hl, hl
+	add hl, bc
+	ld b, h
+	ld c, l
+	pop hl
+	ret
+
 
 EnemyAttackDamage: ; 353f6
 	call ResetDamage
@@ -3108,6 +3145,8 @@ EnemyAttackDamage: ; 353f6
 	ld a, [hli]
 	ld b, a
 	ld c, [hl]
+	
+	call HailDefenseBoost
 
 	ld a, [PlayerScreens]
 	bit SCREENS_REFLECT, a
@@ -3132,6 +3171,8 @@ EnemyAttackDamage: ; 353f6
 	ld a, [hli]
 	ld b, a
 	ld c, [hl]
+	
+	call SandstormSpDefBoost
 
 	ld a, [PlayerScreens]
 	bit SCREENS_LIGHT_SCREEN, a
@@ -8258,29 +8299,7 @@ BattleCommand_Disable: ; 36fed
 BattleCommand_PayDay: ; 3705c
 ; payday
 
-	xor a
-	ld hl, StringBuffer1
-	ld [hli], a
 
-	ld a, [hBattleTurn]
-	and a
-	ld a, [BattleMonLevel]
-	jr z, .ok
-	ld a, [EnemyMonLevel]
-.ok
-
-	add a
-	ld hl, wPayDayMoney + 2
-	add [hl]
-	ld [hld], a
-	jr nc, .done
-	inc [hl]
-	dec hl
-	jr nz, .done
-	inc [hl]
-.done
-	ld hl, CoinsScatteredText
-	jp StdBattleTextBox
 
 ; 3707f
 

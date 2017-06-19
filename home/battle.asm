@@ -136,6 +136,16 @@ UpdateBattleHuds:: ; 39d4
 ; 39e1
 
 ;New stuff added to check types
+CheckIfTargetIsIceType::
+	ld a, ICE
+	jr CheckIfTargetIsSomeType
+CheckIfTargetIsRockType::
+	ld a, ROCK
+	jr CheckIfTargetIsSomeType
+CheckIfTargetIsSomeType::
+	ld b, a
+	ld a, [hBattleTurn]
+	jr CheckIfSomeoneIsSomeType
 CheckIfUserIsGroundType::
 	ld a, GROUND
 	jr CheckIfUserIsSomeType
