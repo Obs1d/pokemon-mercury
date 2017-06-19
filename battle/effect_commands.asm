@@ -2027,6 +2027,28 @@ BattleCommand_CheckHit: ; 34d32
 
 ; 34ecc
 
+.WeatherAccCheck:
+; Returns z if the move used always hits in the current weather
+	ld a, [Weather]
+	cp WEATHER_RAIN
+	jr z, .RainAccCheck
+	cp WEATHER_HAIL
+	jr z, .HailAccCheck
+	ret
+
+.RainAccCheck:
+	ld a, BATTLE_VARS_MOVE_ANIM
+	call GetBattleVar
+
+	cp THUNDER
+	ret
+
+.HailAccCheck:
+	ld a, BATTLE_VARS_MOVE_ANIM
+	call GetBattleVar
+
+	cp BLIZZARD
+	ret
 
 BattleCommand_EffectChance: ; 34ecc
 ; effectchance
