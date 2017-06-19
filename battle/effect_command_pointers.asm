@@ -177,4 +177,5 @@ BattleCommandPointers: ; 3fd28
 	dw BattleCommand_StartLoop ; 35197
 	dw BattleCommand_Curl ; 365a7
 	dw BattleCommand_Burn
+	dw BattleCommand_StartHail
 ; 3fe86

@@ -1187,11 +1187,6 @@ SandstormBrewedText: ; 0x816e4
 	prompt
 ; 0x816f9
 
-HailStartedText: ; 0x816e4
-	text "It started to"
-	line "HAIL!"
-	prompt
-
 BracedItselfText: ; 0x816f9
 	text "<USER>"
 	line "braced itself!"
@@ -1313,4 +1308,9 @@ BattleText_0x8188e: ; 0x8188e
 AlreadyBurnedText: ; 0x811fa
 	text "<TARGET>'s"
 	line "already burned!"
+	prompt
+	
+HailStartedText: ; 0x816e4
+	text "It started to"
+	line "HAIL!"
 	prompt

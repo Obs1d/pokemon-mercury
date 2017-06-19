@@ -1364,7 +1364,6 @@ Dig:
 	kingsrock
 	endmove
 
-Bind:
 Wrap:
 FireSpin:
 Clamp:
@@ -1691,6 +1690,7 @@ Sandstorm:
 	startsandstorm
 	endmove
 	
+Bind:	
 Hail:
 	checkobedience
 	usedmovetext

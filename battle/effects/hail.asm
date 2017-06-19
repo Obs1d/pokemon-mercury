@@ -10,7 +10,7 @@ BattleCommand_StartHail: ; 376f8
 	ld a, 5
 	ld [WeatherCount], a
 	call AnimateCurrentMove
-	ld hl, StartedToHailText
+	ld hl, HailStartedText
 	jp StdBattleTextBox
 
 .failed

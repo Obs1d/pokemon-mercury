@@ -8848,6 +8848,8 @@ INCLUDE "battle/effects/sandstorm.asm"
 
 INCLUDE "battle/effects/rollout.asm"
 
+INCLUDE "battle/effects/hail.asm"
+
 
 BattleCommand5d: ; 37791
 ; unused

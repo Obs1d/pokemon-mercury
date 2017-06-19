@@ -129,7 +129,7 @@
 	dw Pursuit
 	dw RapidSpin
 	dw NormalHit
-	dw NormalHit
+	dw Hail
 	dw MorningSun
 	dw Synthesis
 	dw Moonlight
