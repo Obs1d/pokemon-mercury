@@ -342,8 +342,8 @@ FlyDescription:
 	next "2nd turn: Attack@"
 
 BindDescription:
-	db   "Binds the target"
-	next "for 2-5 turns.@"
+	db   "Inflicts damage"
+	next "every turn.@"
 
 SlamDescription:
 	db   "Slams the foe with"

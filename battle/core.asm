@@ -1842,8 +1842,10 @@ HandleWeather:
 
 HandleWeatherEffects:
 ; sandstorm/hail damage, abilities like rain dish, etc.
+	ld a, [Weather]
 	cp WEATHER_HAIL
 	call z, .HandleHail
+	ld a, [Weather]
 	cp WEATHER_SANDSTORM
 	call z, .HandleSandstorm
 	ret
@@ -1877,8 +1879,9 @@ HandleWeatherEffects:
 
 	call CheckIfUserIsIceType
 	ret z
+	
 	ld hl, HailHitsText
-	jp StdBattleTextBox
+	call StdBattleTextBox
 
 	call GetSixteenthMaxHP
 	jp SubtractHPFromUser

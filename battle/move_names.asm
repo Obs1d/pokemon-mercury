@@ -17,7 +17,7 @@
 	db "WING ATTACK@"
 	db "WHIRLWIND@"
 	db "FLY@"
-	db "BIND@"
+	db "HAIL@"
 	db "SLAM@"
 	db "VINE WHIP@"
 	db "STOMP@"
