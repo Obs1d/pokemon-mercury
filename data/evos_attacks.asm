@@ -431,7 +431,7 @@ NidoranMEvosAttacks:				;Klink
 	db 1, VICEGRIP
 	db 11, THUNDERSHOCK
 	db 16, DOUBLESLAP
-	db 21, BIND
+	db 21, WRAP
 	db 26, SPARK
 	db 31, AGILITY
 	db 36, SCREECH
@@ -444,7 +444,7 @@ NidoranMEvosAttacks:				;Klink
 NidorinoEvosAttacks:				;Klang
 	db EVOLVE_LEVEL, 49, NIDOKING
 	db 0 ; no more evolutions
-	db 1, BIND
+	db 1, WRAP
 	db 26, SPARK
 	db 31, AGILITY
 	db 36, SCREECH
@@ -817,7 +817,7 @@ PoliwagEvosAttacks:			;Dewpider
 	db EVOLVE_LEVEL, 22, POLIWHIRL
 	db 0 ; no more evolutions
 	db 1, BUBBLE
-	db 5, BIND
+	db 5, WRAP
 	db 8, SPIDER_WEB
 	db 13, FURY_CUTTER
 	db 16, BUBBLEBEAM
@@ -1329,7 +1329,7 @@ OnixEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, HARDEN
-	db 1, BIND
+	db 1, WRAP
 	db 4, CURSE
 	db 7, ROCK_THROW
 	db 13, RAGE
@@ -1589,6 +1589,7 @@ ChanseyEvosAttacks:					;Snorunt
 	db 37, ICE_BEAM
 	db 41, CRUNCH
 	db 46, BLIZZARD
+	db 50, BIND
 	db 0 ; no more level-up moves
 
 TangelaEvosAttacks:					;Mismagius
@@ -1828,6 +1829,7 @@ LaprasEvosAttacks:					;Froslass
 	db 37, CHARM
 	db 41, SHADOW_BALL
 	db 46, BLIZZARD
+	db 54, BIND
 	db 0 ; no more level-up moves
 
 DittoEvosAttacks:
@@ -1942,6 +1944,7 @@ OmanyteEvosAttacks:					;Amaura
 	db 32, AURORA_BEAM
 	db 36, ANCIENTPOWER
 	db 40, SWIFT
+	db 42, BIND
 	db 44, ENCORE
 	db 47, LIGHT_SCREEN
 	db 50, ICE_BEAM
@@ -1953,7 +1956,8 @@ OmastarEvosAttacks:					;Aurorus
 	db 0 ; no more evolutions
 	db 1, AURORA_BEAM
 	db 36, ANCIENTPOWER
-	db 43, SWIFT
+	db 39, BIND
+	db 42, SWIFT
 	db 46, ENCORE
 	db 50, LIGHT_SCREEN
 	db 56, ICE_BEAM
@@ -2032,20 +2036,18 @@ ArticunoEvosAttacks:				;Spheal
 	db 26, BODY_SLAM
 	db 31, REST
 	db 31, SLEEP_TALK
-	db 36, CURSE
+	db 36, BIND
 	db 41, BLIZZARD
 	db 0 ; no more level-up moves
 
 ZapdosEvosAttacks:					;Sealeo
 	db EVOLVE_LEVEL, 44, ZAPDOS
 	db 0 ; no more evolutions
-	db 13, ICY_WIND
-	db 17, BUBBLEBEAM
 	db 21, AURORA_BEAM
 	db 26, BODY_SLAM
-	db 34, REST
-	db 34, SLEEP_TALK
-	db 39, CURSE
+	db 31, REST
+	db 31, SLEEP_TALK
+	db 38, BIND
 	db 45, BLIZZARD
 	db 0 ; no more level-up moves
 
@@ -2054,7 +2056,7 @@ MoltresEvosAttacks:					;Walrein
 	db 26, BODY_SLAM
 	db 34, REST
 	db 34, SLEEP_TALK
-	db 39, CURSE
+	db 38, BIND
 	db 50, BLIZZARD
 	db 0 ; no more level-up moves
 
@@ -2379,7 +2381,7 @@ SpinarakEvosAttacks:
 	db 1, STRING_SHOT
 	db 1, CONSTRICT
 	db 5, ABSORB
-	db 8, BIND
+	db 8, WRAP
 	db 12, SCARY_FACE
 	db 15, NIGHT_SHADE
 	db 19, PRESENT
@@ -2987,7 +2989,7 @@ SteelixEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, HARDEN
-	db 1, BIND
+	db 1, WRAP
 	db 4, CURSE
 	db 7, ROCK_THROW
 	db 13, RAGE
@@ -3015,7 +3017,7 @@ SnubbullEvosAttacks:				;Vulpix-A
 	db 18, HYPNOSIS
 	db 23, FAINT_ATTACK
 	db 26, NIGHT_SHADE
-	db 28, AURORA_BEAM
+	db 28, BIND
 	db 31, PSYCHIC_M
 	db 34, SAFEGUARD
 	db 36, ICE_BEAM
@@ -3419,7 +3421,7 @@ SmeargleEvosAttacks:				;Kecleon
 	db 1, THIEF
 	db 1, TAIL_WHIP
 	db 1, LICK
-	db 4, BIND
+	db 4, WRAP
 	db 7, PRESENT
 	db 13, FURY_SWIPES
 	db 16, FAINT_ATTACK
@@ -3532,6 +3534,7 @@ BlisseyEvosAttacks:					;Glalie
 	db 37, ICE_BEAM
 	db 41, CRUNCH
 	db 48, BLIZZARD
+	db 54, BIND
 	db 0 ; no more level-up moves
 
 RaikouEvosAttacks:
@@ -3639,7 +3642,7 @@ HoOhEvosAttacks:				;Glaceon
 	db 33, ROCK_SLIDE
 	db 38, DOUBLE_EDGE
 	db 43, MIRROR_COAT
-	db 48, FLASH
+	db 48, BIND
 	db 53, BLIZZARD
 	db 58, BONE_CLUB
 	db 0 ; no more level-up moves
