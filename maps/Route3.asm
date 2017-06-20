@@ -132,24 +132,19 @@ UnknownText_0x1ae163:
 	line "stairs."
 	done
 
-Route3_MapEventHeader:
-	; filler
-	db 0, 0
+Route3_MapEventHeader:: db 0, 0
 
-.Warps:
-	db 1
-	warp_def $1, $34, 1, MOUNT_MOON
+.Warps: db 1
+	warp_def 1, 52, 1, MOUNT_MOON
 
-.XYTriggers:
-	db 0
+.CoordEvents: db 0
 
-.Signposts:
-	db 1
+.BGEvents: db 1
 	signpost 13, 49, SIGNPOST_READ, MapRoute3Signpost0Script
 
-.PersonEvents:
-	db 4
-	person_event SPRITE_FISHER, 12, 26, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_TRAINER, 2, TrainerFirebreatherOtis, -1
-	person_event SPRITE_YOUNGSTER, 7, 10, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerYoungsterWarren, -1
-	person_event SPRITE_YOUNGSTER, 3, 16, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 1, TrainerYoungsterJimmy, -1
-	person_event SPRITE_FISHER, 5, 49, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_TRAINER, 3, TrainerFirebreatherBurt, -1
+.ObjectEvents: db 4
+	person_event SPRITE_FISHER, 10, 25, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_TRAINER, 1, TrainerFirebreatherOtis, -1
+	person_event SPRITE_SWIMMER_GIRL, 15, 9, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerYoungsterWarren, -1
+	person_event SPRITE_SWIMMER_GUY, 8, 32, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 1, TrainerYoungsterJimmy, -1
+	person_event SPRITE_SWIMMER_GIRL, 7, 46, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_TRAINER, 3, TrainerFirebreatherBurt, -1
+

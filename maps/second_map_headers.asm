@@ -6,9 +6,9 @@
 	connection south, ROUTE_29, Route29, 0, 20, 10, CHERRYGROVE_CITY
 	connection east, ROUTE_30, Route30, -3, 0, 10, CHERRYGROVE_CITY
 
-	map_header_2 VioletCity, VIOLET_CITY, 53, SOUTH
+	map_header_2 VioletCity, VIOLET_CITY, 53, SOUTH | EAST
 	connection south, ROUTE_36, Route36, 3, 0, 13, VIOLET_CITY
-	;connection east, ROUTE_31, Route31, 9, 0, 9, VIOLET_CITY
+	connection east, ROUTE_3, Route3, -1, 0, 9, VIOLET_CITY
 
 	map_header_2 AzaleaTown, AZALEA_TOWN, $5, WEST | EAST
 	connection west, ROUTE_34, Route34, -3, 15, 12, AZALEA_TOWN
@@ -68,9 +68,9 @@
 	connection north, ROUTE_30, Route30, -2, 0, 15, ROUTE_31
 	;connection west, VIOLET_CITY, VioletCity, -3, 6, 12, ROUTE_31
 
-	map_header_2 Route32, ROUTE_32, $5, NORTH | SOUTH
-	connection north, VIOLET_CITY, VioletCity, 0, 0, 13, ROUTE_32
-	connection south, ROUTE_33, Route33, 0, 0, 10, ROUTE_32
+	map_header_2 Route32, ROUTE_32, 5, NORTH
+	connection north, PEWTER_CITY, PewterCity, -3, 5, 13, ROUTE_32
+	;connection south, ROUTE_33, Route33, 0, 0, 10, ROUTE_32
 
 	map_header_2 Route33, ROUTE_33, $5, NORTH | WEST
 	connection north, ROUTE_32, Route32, 0, 0, 10, ROUTE_33
@@ -128,9 +128,9 @@
 	;connection south, ROUTE_29, Route29, -3, 7, 16, ROUTE_46
 	connection east, ROUTE_45, Route45, -3, 33, 12, ROUTE_46
 
-	map_header_2 PewterCity, PEWTER_CITY, $f, SOUTH | EAST
-	connection south, ROUTE_2, Route2, 5, 0, 10, PEWTER_CITY
-	connection east, ROUTE_3, Route3, 5, 0, 9, PEWTER_CITY
+	map_header_2 PewterCity, PEWTER_CITY, 53, SOUTH | WEST
+	connection south, ROUTE_32, Route32, 3, -5, 15, PEWTER_CITY
+	connection west, ROUTE_3, Route3, 2, 0, 9, PEWTER_CITY
 
 	map_header_2 Route2, ROUTE_2, $f, NORTH | SOUTH
 	connection north, PEWTER_CITY, PewterCity, -3, 2, 16, ROUTE_2
@@ -254,9 +254,9 @@
 	map_header_2 Route25, ROUTE_25, $2c, SOUTH
 	connection south, ROUTE_24, Route24, 0, 0, 10, ROUTE_25
 
-	map_header_2 Route3, ROUTE_3, $2c, WEST | EAST
-	connection west, PEWTER_CITY, PewterCity, -3, 2, 15, ROUTE_3
-	connection east, ROUTE_4, Route4, 0, 0, 9, ROUTE_3
+	map_header_2 Route3, ROUTE_3, 53, WEST | EAST
+	connection west, VIOLET_CITY, VioletCity, 1, 0, 10, ROUTE_3
+	connection east, PEWTER_CITY, PewterCity, -2, 0, 14, ROUTE_3
 
 	map_header_2 Route4, ROUTE_4, $2c, WEST | EAST
 	connection west, ROUTE_3, Route3, 0, 0, 9, ROUTE_4
