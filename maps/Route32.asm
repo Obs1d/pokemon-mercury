@@ -940,34 +940,34 @@ Route32_MapEventHeader:: db 0, 0
 .Warps: db 4
 	warp_def 59, 1, 1, ROUTE_32_POKECENTER_1F
 	warp_def 1, 7, 3, ROUTE_32_RUINS_OF_ALPH_GATE
-	warp_def 5, 1, 4, ROUTE_32_RUINS_OF_ALPH_GATE
+	warp_def 1, 33, 4, ROUTE_32_RUINS_OF_ALPH_GATE
 	warp_def 58, 1, 4, UNION_CAVE_1F
 
 .CoordEvents: db 2
-	xy_trigger 0, 8, 18, 0, Route32CooltrainerMStopsYou, 0, 0
-	xy_trigger 1, 58, 6, 0, Route32WannaBuyASlowpokeTailScript, 0, 0
+	xy_trigger 0, 10, 19, 0, Route32CooltrainerMStopsYou, 0, 0
+	xy_trigger 1, 58, 2, 0, Route32WannaBuyASlowpokeTailScript, 0, 0
 
 .BGEvents: db 6
 	signpost 16, 4, SIGNPOST_READ, Route32Sign
-	signpost 1, 9, SIGNPOST_READ, Route32RuinsSign
-	signpost 67, 5, SIGNPOST_READ, Route32UnionCaveSign
+	signpost 1, 31, SIGNPOST_READ, Route32RuinsSign
+	signpost 66, 2, SIGNPOST_READ, Route32UnionCaveSign
 	signpost 60, 1, SIGNPOST_READ, Route32PokeCenterSign
-	signpost 53, 36, SIGNPOST_ITEM, Route32HiddenGreatBall
-	signpost 53, 12, SIGNPOST_ITEM, Route32HiddenSuperPotion
+	signpost 65, 18, SIGNPOST_ITEM, Route32HiddenGreatBall
+	signpost 54, 35, SIGNPOST_ITEM, Route32HiddenSuperPotion
 
 .ObjectEvents: db 14
-	person_event SPRITE_FISHER, 53, 15, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 1, TrainerFisherJustin, -1
-	person_event SPRITE_FISHER, 24, 5, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 3, TrainerFisherRalph1, -1
-	person_event SPRITE_FISHER, 65, 20, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 1, TrainerFisherHenry, -1
-	person_event SPRITE_YOUNGSTER, 65, 27, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerYoungsterAlbert, -1
-	person_event SPRITE_YOUNGSTER, 59, 15, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerYoungsterGordon, -1
-	person_event SPRITE_YOUNGSTER, 45, 5, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 3, TrainerCamperRoland, -1
+	person_event SPRITE_FISHER, 53, 14, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 1, TrainerFisherJustin, -1
+	person_event SPRITE_FISHER, 22, 7, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 3, TrainerFisherRalph1, -1
+	person_event SPRITE_FISHER, 65, 28, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 1, TrainerFisherHenry, -1
+	person_event SPRITE_YOUNGSTER, 21, 17, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerYoungsterAlbert, -1
+	person_event SPRITE_YOUNGSTER, 59, 20, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerYoungsterGordon, -1
+	person_event SPRITE_YOUNGSTER, 45, 4, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 3, TrainerCamperRoland, -1
 	person_event SPRITE_LASS, 14, 8, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 1, TrainerPicnickerLiz1, -1
 	person_event SPRITE_COOLTRAINER_M, 28, 7, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, Route32CooltrainerMScript, -1
 	person_event SPRITE_YOUNGSTER, 36, 2, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_TRAINER, 3, TrainerBird_keeperPeter, -1
-	person_event SPRITE_FISHER, 53, 27, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, SlowpokeTailSalesmanScript, EVENT_SLOWPOKE_WELL_ROCKETS
-	person_event SPRITE_POKE_BALL, 59, 27, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route32GreatBall, EVENT_ROUTE_32_GREAT_BALL
+	person_event SPRITE_FISHER, 61, 28, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, SlowpokeTailSalesmanScript, EVENT_SLOWPOKE_WELL_ROCKETS
+	person_event SPRITE_POKE_BALL, 52, 28, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route32GreatBall, EVENT_ROUTE_32_GREAT_BALL
 	person_event SPRITE_FISHER, 6, 13, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, Route32RoarTMGuyScript, -1
-	person_event SPRITE_LASS, 63, 12, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, FriedaScript, EVENT_ROUTE_32_FRIEDA_OF_FRIDAY
+	person_event SPRITE_LASS, 65, 11, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, FriedaScript, EVENT_ROUTE_32_FRIEDA_OF_FRIDAY
 	person_event SPRITE_POKE_BALL, 14, 28, SPRITEMOVEDATA_ITEM_TREE, 0, 0, -1, -1, 0, PERSONTYPE_ITEMBALL, 0, Route32Repel, EVENT_ROUTE_32_REPEL
 

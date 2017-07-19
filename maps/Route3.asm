@@ -140,7 +140,7 @@ Route3_MapEventHeader:: db 0, 0
 .CoordEvents: db 0
 
 .BGEvents: db 1
-	signpost 13, 49, SIGNPOST_READ, MapRoute3Signpost0Script
+	signpost 11, 21, SIGNPOST_READ, MapRoute3Signpost0Script
 
 .ObjectEvents: db 4
 	person_event SPRITE_FISHER, 10, 25, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_RED, PERSONTYPE_TRAINER, 1, TrainerFirebreatherOtis, -1

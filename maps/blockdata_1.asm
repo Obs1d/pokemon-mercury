@@ -14,7 +14,7 @@ Route28_BlockData:
 	INCBIN "maps/Route28.blk"
 
 BetaHerosHouse_BlockData:
-	INCBIN "maps/BetaHerosHouse.blk"
+	;INCBIN "maps/BetaHerosHouse.blk"
 
 CeladonCity_BlockData:
 	INCBIN "maps/CeladonCity.blk"
@@ -35,19 +35,19 @@ Route11_BlockData:
 	INCBIN "maps/Route11.blk"
 
 BetaSproutTower5_BlockData:
-	INCBIN "maps/BetaSproutTower5.blk"
+	;INCBIN "maps/BetaSproutTower5.blk"
 
 Route15_BlockData:
 	INCBIN "maps/Route15.blk"
 
 BetaSproutTower9_BlockData:
-	INCBIN "maps/BetaSproutTower9.blk"
+	;INCBIN "maps/BetaSproutTower9.blk"
 
 Route19_BlockData:
 	INCBIN "maps/Route19.blk"
 
 BetaBlackthornCity_BlockData:
-	INCBIN "maps/BetaBlackthornCity.blk"
+	;INCBIN "maps/BetaBlackthornCity.blk"
 
 Route10South_BlockData:
 	INCBIN "maps/Route10South.blk"
